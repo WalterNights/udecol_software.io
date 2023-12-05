@@ -1,308 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../static/assets/img/u_de_colombia_favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../static/assets/css/style.css">
-    <!-- DOCX -->
-    <script src="https://unpkg.com/docx@7.1.0/build/index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
-    <!-- DOCX -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-    <title>Convocatoría Docente | U de Colombia</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="../static/assets/css/student_inspector.css">
+    <title>Document</title>
 </head>
+
 <body>
-    <main>
-        <div class="display-center full-width full-height">
-            <form id="userFormData" class="main-form-container display-column" action="">
-                <h1>CONVOCATORIA DOCENTE</h1>
-                <img class="main-logo" src="../static/assets/img/u_de_colombia.png" alt="Corporación Universitaria U de Colombia | Logo">
-                <section class="section-user display-center">
-                    <div class="main-form-content display-column">
-                        <div class="main-form-title">
-                            <h2>DATOS BÁSICOS</h2>
-                            <span>Por favor no utilizar tildes al llenar la información</span>
-                        </div>
-                        <div class="user-full-name display-center">
-                            <div class="display-column input-container">
-                                <label for="user_name">Nombres</label>
-                                <input type="text" name="user_name" placeholder="escriba su nombre..." required>
-                            </div>
-                            <div class="display-column input-container">
-                                <label for="user_lastname">Apellidos</label>
-                                <input type="text" name="user_lastname" placeholder="escriba su apellido..." required>
-                            </div>
-                        </div>
-                        <div class="user-id display-column input-container">
-                            <label for="user_id">Documento de Identidad</label>
-                            <input type="text" name="user_id" placeholder="escriba su documento de identidad..." required>
-                        </div>
-                        <div class="user-country display-column input-container">
-                            <label for="user_country">Nacionalidad</label>
-                            <input type="text" name="user_country" placeholder="escriba su nacionalidad..." required>
-                        </div>
-                        <div class="user-addres display-center">
-                            <div class="display-column input-container">
-                                <label for="user_address">Dirección de residencia</label>
-                                <input type="text" name="user_address" placeholder="escriba dirección..." required>
-                            </div>
-                            <div class="display-column input-container">
-                                <label for="user_city">Ciudad</label>
-                                <input type="text" name="user_city" placeholder="escriba la ciudad donde vive..." required>
-                            </div>
-                        </div>
-                        <div class="user-phone display-center">
-                            <div class="display-column input-container">
-                                <label for="user_phone">Teléfono Fijo</label>
-                                <input type="text" name="user_phone" placeholder="escriba su número de teléfono fijo...">
-                            </div>
-                            <div class="display-column input-container">
-                                <label for="user_cell">Teléfono Celular</label>
-                                <input type="text" name="user_cell" placeholder="escriba su número de teléfono celular..." required>
-                            </div>
-                        </div>
-                        <div class="user-email display-column input-container">
-                            <label for="user_email">Correo Electrónico</label>
-                            <input type="text" name="user_email" placeholder="escriba su correo..." required>
-                        </div>
-                        <div class="user-certificate display-column input-container">
-                            <label for="user_certificate">Número de años CERTIFICADOS de experiencia docente en EDUCACIÓN
-                                SUPERIOR</label>
-                            <input type="text" name="user_certificate"
-                                placeholder="escriba el numero de años en educación superior..." required>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="main-form-separator"></div>
-
-                <section class="section-career display-center">
-                    <div class="main-form-content display-column">
-                        <div class="main-form-title">
-                            <h2>INFORMACIÓN ACADÉMICA</h2>
-                            <span>Solo ingresar títulos con diploma que lo acredite</span>
-                        </div>
-                        <div class="user-scholar display-center">
-                            <div class="display-column input-container">
-                                <label for="user_scholar">Titulo Pregrado</label>
-                                <ol>
-                                    <li>
-                                        <input type="text" name="user_scholar1" placeholder="escriba su título universitario..." required>
-                                    </li>
-                                    <li>
-                                        <input type="text" name="user_scholar2" placeholder="escriba su título universitario...">
-                                    </li>
-                                    <li>
-                                        <input type="text" name="user_scholar3" placeholder="escriba su título universitario...">
-                                    </li>
-                                </ol>
-                            </div>
-                            <div class="display-column input-container">
-                                <label for="user_university">Institución o Universidad</label>
-                                <input type="text" name="user_universityA1" placeholder="escriba el nombre de la institución..." required>
-                                <input type="text" name="user_universityA2" placeholder="escriba el nombre de la institución...">
-                                <input type="text" name="user_universityA3" placeholder="escriba el nombre de la institución...">
-                            </div>
-                        </div>
-                        <div class="user-specialization display-center">
-                            <div class="display-column input-container">
-                                <label for="user_specialization">Titulo de Especialización</label>
-                                <ol>
-                                    <li>
-                                        <input type="text" name="user_specialization1" placeholder="escriba su título de especialización...">
-                                    </li>
-                                    <li>
-                                        <input type="text" name="user_specialization2" placeholder="escriba su título de especialización...">
-                                    </li>
-                                    <li>
-                                        <input type="text" name="user_specialization3" placeholder="escriba su título de especialización...">
-                                    </li>
-                                </ol>
-                            </div>
-                            <div class="display-column input-container">
-                                <label for="user_university">Institución o Universidad</label>
-                                <input type="text" name="user_universityB1" placeholder="escriba el nombre de la institución...">
-                                <input type="text" name="user_universityB2" placeholder="escriba el nombre de la institución...">
-                                <input type="text" name="user_universityB3" placeholder="escriba el nombre de la institución...">
-                            </div>
-                        </div>
-                        <div class="user-mastery display-center">
-                            <div class="display-column input-container">
-                                <label for="user_mastery">Titulo de Maestría</label>
-                                <ol>
-                                    <li>
-                                        <input type="text" name="user_mastery1" placeholder="escriba su título de maestría...">
-                                    </li>
-                                    <li>
-                                        <input type="text" name="user_mastery2" placeholder="escriba su título de maestría...">
-                                    </li>
-                                    <li>
-                                        <input type="text" name="user_mastery3" placeholder="escriba su título de maestría...">
-                                    </li>
-                                </ol>
-                            </div>
-                            <div class="display-column input-container">
-                                <label for="user_university">Institución o Universidad</label>
-                                <input type="text" name="user_universityC1" placeholder="escriba el nombre de la institución...">
-                                <input type="text" name="user_universityC2" placeholder="escriba el nombre de la institución...">
-                                <input type="text" name="user_universityC3" placeholder="escriba el nombre de la institución...">
-                            </div>
-                        </div>
-                        <div class="user-doctorate display-center">
-                            <div class="display-column input-container">
-                                <label for="user_doctorate">Titulo de Doctorado</label>
-                                <ol>
-                                    <li>
-                                        <input type="text" name="user_doctorate" placeholder="escriba su título de doctorado...">
-                                    </li>
-                                </ol>
-                            </div>
-                            <div class="display-column input-container">
-                                <label for="user_university">Institución o Universidad</label>
-                                <input type="text" name="user_universityD1" placeholder="escriba el nombre de la institución...">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="main-form-separator"></div>
-
-                <section class="section-language display-center">
-                    <div class="main-form-content display-column">
-                        <div class="main-form-title">
-                            <h2>Competencias en lenguas extranjeras</h2>
-                        </div>
-                        <div class="user-language display-center">
-                            <div class="display-center input-language">
-                                <div>
-                                    <span for="user_language">Inglés</span>
-                                </div>
-                                <input type="checkbox" name="user_english_lang" value="Inglés">
-                            </div>
-                            <div class="display-center input-language">
-                                <div class="display-center">
-                                    <label for="user_reed">Lee</label>
-                                    <input type="checkbox" name="user_reed_e">
-                                </div>
-                                <div class="display-center">
-                                    <label for="user_speack">Habla</label>
-                                    <input type="checkbox" name="user_speack_e">
-                                </div>
-                                <div class="display-center">
-                                    <label for="user_write">Escribe</label>
-                                    <input type="checkbox" name="user_write_e">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="user-language display-center">
-                            <div class="display-center input-language">
-                                <div>
-                                    <span for="user_language">Frances</span>
-                                </div>
-                                <input type="checkbox" name="user_french_lang" value="Francés">
-                            </div>
-                            <div class="display-center input-language">
-                                <div class="display-center">
-                                    <label for="user_reed">Lee</label>
-                                    <input type="checkbox" name="user_reed_f">
-                                </div>
-                                <div class="display-center">
-                                    <label for="user_speack">Habla</label>
-                                    <input type="checkbox" name="user_speack_f">
-                                </div>
-                                <div class="display-center">
-                                    <label for="user_write">Escribe</label>
-                                    <input type="checkbox" name="user_write_f">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="user-language display-center">
-                            <div class="display-center container-language">
-                                <div>
-                                    <label for="user_another_lang">Otro</label>
-                                </div>
-                                <input type="text" name="user_another_lang" placeholder="escriba un idioma...">
-                            </div>
-                            <div class="display-center input-language">
-                                <div class="display-center">
-                                    <label for="user_reed">Lee</label>
-                                    <input type="checkbox" name="user_reed_a">
-                                </div>
-                                <div class="display-center">
-                                    <label for="user_speack">Habla</label>
-                                    <input type="checkbox" name="user_speack_a">
-                                </div>
-                                <div class="display-center">
-                                    <label for="user_write">Escribe</label>
-                                    <input type="checkbox" name="user_write_a">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="main-form-separator"></div>
-
-                <section class="section-knowledge display-center">
-                    <div class="main-form-content display-column">
-                        <div class="main-form-title">
-                            <h2>Área(s) del conocimiento en las que puede servir</h2>
-                        </div>
-                        <div class="user-knowledge display-column">
-                            <div class="display-column input-container">
-                                <label for="user_knowledge">Area 1</label>
-                                <input type="text" name="user_knowledge1" placeholder="ejemplo: Matemáticas...">
-                            </div>
-                            <div class="display-column input-container">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="ejemplo: geometría, algebra, ecuaciones diferenciales..."></textarea>
-                            </div>
-                        </div>
-                        <div class="user-knowledge display-column">
-                            <div class="display-column input-container">
-                                <label for="user_knowledge">Area 2</label>
-                                <input type="text" name="user_knowledge2" placeholder="ejemplo: Matemáticas...">
-                            </div>
-                            <div class="display-column input-container">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="ejemplo: geometría, algebra, ecuaciones diferenciales..."></textarea>
-                            </div>
-                        </div>
-                        <div class="user-knowledge display-column">
-                            <div class="display-column input-container">
-                                <label for="user_knowledge">Area 3</label>
-                                <input type="text" name="user_knowledge3" placeholder="ejemplo: Matemáticas...">
-                            </div>
-                            <div class="display-column input-container">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="ejemplo: geometría, algebra, ecuaciones diferenciales..."></textarea>
-                            </div>
-                        </div>
-                        <div class="user-knowledge display-column">
-                            <div class="display-column input-container">
-                                <label for="user_knowledge">Area 4</label>
-                                <input type="text" name="user_knowledge4" placeholder="ejemplo: Matemáticas...">
-                            </div>
-                            <div class="display-column input-container">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="ejemplo: geometría, algebra, ecuaciones diferenciales..."></textarea>
-                            </div>
-                        </div>
-                        <div class="user-knowledge display-column">
-                            <div class="display-column input-container">
-                                <label for="user_knowledge">Area 5</label>
-                                <input type="text" name="user_knowledge5" placeholder="ejemplo: Matemáticas...">
-                            </div>
-                            <div class="display-column input-container">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="ejemplo: geometría, algebra, ecuaciones diferenciales..."></textarea>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <button type="button" id="sendButton">Enviar</button>
-            </form>
+    <div class="student-courses-inspector">
+        <section class="display-center margin-top-1">
+            <div class="program-name">
+                <label for="program">Para iniciar, escriba o escoja el nombre del programa y luego presione la tecla <b>ENTER</b></label>
+                <input id="getProgramName" name="program-name" list="pn-option" type="text" placeholder="Ejemplo: administración financiera">
+                <datalist id="pn-option">
+                    <option value="Administración Financiera"></option>
+                    <option value="Contaduría Pública"></option>
+                    <option value="Finanazas y Banca"></option>
+                    <option value="NIIF - NIC"></option>
+                </datalist>
+            </div>
+        </section>
+        <section class="excel-inspector">
+            <div class="display-center">
+                <p><b>Campos mínimos que debe tener el Excel. Nombre, Apellido, No de Cédula, Jornada, Nivel, Período y todas las asignaturas del programa</b></p>
+            </div>
+            <div class="display-center margin-top-1">
+                <label for="docpicker">Selecciona el archivo de EXCEL (.xlsx)</label>
+                <input name="docpicker" type="file" id="docpicker">
+                <div>
+                    <input id="findUser" class="excel-user-search" type="text" placeholder="Escribe el nombre o documento del estudiante">
+                    <button id="checkUser" class="search-button" onclick="checkUser()">Revisar un Usario</button>
+                </div>
+                <div>
+                    <button id="ExcelReady" class="download-disable" title="Aún no has cargado un archivo .xlsx">Descargar Excel Consolidado</button>
+                </div>
+            </div>
+            <div class="display-center margin-top-1">
+                <div id="cardStudent" class="excel-result-search display-center">
+                    <p>Busca un estudiante para ver las asignaturas pendientes</p>
+                </div>
+            </div>
+            <div class="success-message display-center"><h2 id="successMessage"></h2></div>
+        </section>
+        <div class="excel-inspector-modal-container">
+            <div class="excel-inspector-modal-content display-center">
+                <p>El programa seleccionado no se encuentra, tenga en cuenta la ortografía o revise que sea un programa dentro de la oferta de U DE COLOMBIA.</p>
+                <button id="exelInspectorModalButton">Vuelve a intentarlo</button>
+            </div>
+            <div class="excel-inspector-modal-background"></div>
         </div>
-    </main>
-    <footer class="main-footer display-center">
-        © Copyright U de Colombia 2023
-    </footer>
-    <script src="../static/assets/js/script.js"></script>
+    </div>
+    <script type="module" src="../static/assets/js/student_course_filter.js"></script>
 </body>
+
 </html>
