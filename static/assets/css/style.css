@@ -1,0 +1,184 @@
+/* ==============ROOT==============*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {font-size: 62.5%;}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #075299;
+    font-size: 1.5rem;
+}
+
+:root {
+    --main-color: #075299;
+    --secondary-color: #595959;
+    --font-size: 1.5rem;
+    --main-shadow: 3px 3px 15px -3px black;
+}
+
+/* ============end_ROOT============*/
+
+/* ==============CLASS-VARIABLES==============*/
+
+.display-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.full-width {
+    width: 100vw;
+    max-width: 100%;
+}
+
+.full-height {min-height: 100vh;}
+
+/* ============end_CLASS-VARIABLES============*/
+
+/* ==============INDEX==============*/
+
+.main-form-container {
+    width: 65vw;
+    background-color: white;
+    margin: 40px 0;
+    border-radius: 15px;
+    padding: 40px 0;
+    box-shadow: var(--main-shadow);
+}
+
+.main-form-container h1 {margin-bottom: 10rem;}
+
+.main-form-container section {width: 100%;}
+
+.main-form-title {
+    width: 70%;
+    color: var(--main-color);
+}
+
+.main-logo {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: 4vw;
+    right: 20vw;
+}
+
+.main-form-title span {color: var(--secondary-color);}
+
+.main-form-content {
+    width: 100%;
+    height: 80rem;
+}
+
+.main-form-content input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+}
+
+.section-language .main-form-content input { margin-top: 0;}
+
+.user-full-name,
+.user-addres,
+.user-phone,
+.user-scholar,
+.user-specialization,
+.user-mastery,
+.user-doctorate,
+.user-language,
+.user-knowledge {
+    width: 70%;
+    justify-content: space-between;
+}
+
+.user-id,
+.user-country,
+.user-email,
+.user-certificate {width: 70%;}
+
+.user-full-name div,
+.user-addres div,
+.user-phone div,
+.user-scholar div,
+.user-specialization div,
+.user-mastery div,
+.user-doctorate div {width: 45%;}
+
+.input-container {align-items: flex-start;}
+
+.input-language {justify-content: flex-start;}
+
+.container-language {justify-content: space-between;}
+
+.main-form-separator {
+    width: 100%;
+    border: 1px solid var(--secondary-color);
+}
+
+.section-language .main-form-content {height: 30rem;}
+
+.user-language div {width: 35%;}
+
+.user-language input[name=user_another_lang] {width: 65%}
+
+input[type=checkbox] {width: 2rem;}
+
+.section-knowledge .main-form-content {height: 155rem;}
+
+.user-scholar ol,
+.user-specialization ol,
+.user-mastery ol,
+.user-doctorate ol,
+.user-knowledge div,
+.user-knowledge textarea { width: 100%;}
+
+.user-knowledge textarea {
+    margin-top: 10px;
+    resize: none;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.main-form-container button {
+    padding: 10px 21vw;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+    transition: all ease-in-out .2s;
+}
+
+.main-form-container button:hover {
+    cursor: pointer;
+    background-color: #fbc705;
+    transition: all ease-in-out .2s;
+    color: #075299;
+}
+
+/* ============end_INDEX============*/
+
+
+/* ==============FOOTER==============*/
+
+.main-footer {
+    height: 8rem;
+    color: #fbc705;
+}
+
+/* ============end_FOOTER============*/

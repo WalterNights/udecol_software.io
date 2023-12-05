@@ -1,0 +1,271 @@
+{
+    "administración_financiera": {
+        "regular":[
+            {
+                "nivel_1": [
+                    "Administración I",
+                    "Contabilidad I",
+                    "Sistemas",
+                    "Matemáticas I",
+                    "Lectura Crítica"
+                ],
+                "nivel_2": [
+                    "Administración II",
+                    "Contabilidad II",
+                    "Hojas Electrónicas",
+                    "Matemáticas II",
+                    "Derecho Constitucional",
+                    "Legislación Comercial"
+                ],
+                "nivel_3": [
+                    "Administración Financiera",
+                    "Costos I",
+                    "Microeconomía",
+                    "Matemáticas Financieras",
+                    "Redacción Científica",
+                    "Investigación I"
+                ],
+                "nivel_4": [
+                    "Administración de Talento Humano",
+                    "Finanzas I",
+                    "Macroeconomía",
+                    "Estadística I",
+                    "Algoritmos y Programación",
+                    "Legislación Laboral"
+                ],
+                "nivel_5": [
+                    "Psicología Organizacional",
+                    "Finanzas II", 
+                    "Teoría Política Monetaria",
+                    "Estadística II",
+                    "Mercadeo I",
+                    "Presupuestos"
+                ],
+                "nivel_6": [
+                    "Ética",
+                    "Finanzas III",
+                    "Mercadeo II",
+                    "Econometría",
+                    "Electiva I",
+                    "Legislación Financiera"
+                ],
+                "nivel_7": [
+                    "Emprendimiento",
+                    "Finanzas IV",
+                    "Cultura Ciudadana",
+                    "Mercados Financieros I",
+                    "Investigación II",
+                    "Analítica"
+                ],
+                "nivel_8": [
+                    "Desarrollo Sostenible",
+                    "Consultorio Financiero",
+                    "Finanzas Públicas",
+                    "Mercados Financieros II",
+                    "Investigación III",
+                    "Electiva II"
+                ],
+                "nivel_9": [
+                    "Trabajo de Grado",
+                    "Cátedra Financiera Empresarial",
+                    "Economía Internacional"
+                ]
+            }
+        ],
+        "transición": [
+            {
+                "nivel_3T": [
+                    "Administración I / II",
+                    "Contabilidad I",
+                    "Hojas Electrónicas (Sistemas)",
+                    "Matemáticas I / II",
+                    "Micro-Macro",
+                    "Legislación Comercial Financiera"
+                ],
+                "nivel_4T": [
+                    "Lectura Crítica",
+                    "Contabilidad II",
+                    "Teoría Política Monetaria",
+                    "Administración Financiera",
+                    "Derecho Constitucional",
+                    "Estadística I / Descriptiva"
+                ],
+                "nivel_5T": [
+                    "Administración de Talento Humano",
+                    "Costos I",
+                    "Finanzas I / Análisis",
+                    "Estadística II",
+                    "Redacción Científica",
+                    "Investigación I"
+                ],
+                "nivel_6T": [
+                    "Psicología Organizacional",
+                    "Finanzas II / Planeación Financiera",
+                    "Mercadeo I / II",
+                    "Econometría",
+                    "Presupuestos",
+                    "Legislación Laboral"
+                ],
+                "nivel_7T": [
+                    "Ética / Cultura Ciudadana",
+                    "Finanzas III / Corporativas",
+                    "Finanzas Públicas / Ppto Estatal",
+                    "Electiva I",
+                    "Investigación II",
+                    "Algoritmos y Programación"
+                ],
+                "nivel_8T": [
+                    "Emprendimiento",
+                    "Finanzas IV",
+                    "Economía Internacional",
+                    "Mercados Financieros I",
+                    "Investigación III",
+                    "Analítica"
+                ],
+                "nivel_9T": [
+                    "Desarrollo Sostenible",
+                    "Trabajo de Grado",
+                    "Mercados Financieros II",
+                    "Economía Internacional",
+                    "Electiva II",
+                    "Cátedra Financiera Empresarial"
+                ]
+            }
+        ]
+    },
+    "contaduría_pública": {
+        "regular":[
+            {
+                "nivel_1": [
+                    "Administración I",
+                    "Contabilidad I",
+                    "Sistemas",
+                    "Matemáticas I",
+                    "Lectura Crítica"
+                ],
+                "nivel_2": [
+                    "Administración II",
+                    "Contabilidad II",
+                    "Hojas Electrónicas",
+                    "Matemáticas II",
+                    "Derecho Constitucional",
+                    "Legislación Comercial"
+                ],
+                "nivel_3": [
+                    "Administración Financiera",
+                    "Costos I",
+                    "Microeconomía",
+                    "Matemáticas Financieras",
+                    "Redacción Científica",
+                    "Investigación I"
+                ],
+                "nivel_4": [
+                    "Finanzas I",
+                    "Costos II",
+                    "Macroeconomía",
+                    "Estadística I",
+                    "Algoritmos y Programación",
+                    "Legislación Laboral"
+                ],
+                "nivel_5": [
+                    "Gestión Comercial",
+                    "Renta I", 
+                    "Paquetes Contables",
+                    "Estadística II",
+                    "Finanzas II",
+                    "Presupuestos"
+                ],
+                "nivel_6": [
+                    "Ética",
+                    "Renta II",
+                    "Planificación Estatal",
+                    "NIIAS Aseguramiento de la Información",
+                    "IVA Retención en la Fuente",
+                    "Estados Financieros Consolidados"
+                ],
+                "nivel_7": [
+                    "Emprendimiento",
+                    "Cultura Ciudadana",
+                    "Practica Contable",
+                    "Contabilidad Estatal Colombiana",
+                    "Investigación II",
+                    "Analítica"
+                ],
+                "nivel_8": [
+                    "Desarrollo Sostenible",
+                    "Gerencia Estratégica de Impuestos",
+                    "Contabilidad Administrativa",
+                    "Revisoría Fiscal",
+                    "Investigación III",
+                    "Finanzas Públicas"
+                ],
+                "nivel_9": [
+                    "Economía Internacional",
+                    "Electiva",
+                    "Practica NIIF",
+                    "Trabajo de Grado"
+                ]
+            }
+        ],
+        "transición": [
+            {
+                "nivel_3T": [
+                    "Administración I / II",
+                    "Contabilidad I",
+                    "Hojas Electrónicas (Sistemas)",
+                    "Matemáticas I / II",
+                    "Micro-Macro",
+                    "Legislación Comercial Financiera"
+                ],
+                "nivel_4T": [
+                    "Lectura Crítica",
+                    "Contabilidad II",
+                    "Matemática Financiera",
+                    "Administración Financiera",
+                    "Derecho Constitucional",
+                    "Estadística I / Descriptiva"
+                ],
+                "nivel_5T": [
+                    "Gestión Comercial",
+                    "Costos I",
+                    "Finanzas I / Análisis",
+                    "Estadística II",
+                    "Redacción Científica",
+                    "Investigación I"
+                ],
+                "nivel_6T": [
+                    "Presupuestos",
+                    "Costos II",
+                    "Finanzas II / Planeación Financiera",
+                    "Renta I",
+                    "Paquetes Contables",
+                    "Finanzas Públicas / Ppto Estatal"
+                ],
+                "nivel_7T": [
+                    "Ética / Cultura Ciudadana",
+                    "Planificación Estatal / Contabilidad Estatal",
+                    "Estados Financieros Consolidados",
+                    "Renta II",
+                    "Investigación II",
+                    "Algoritmos y Programación"
+                ],
+                "nivel_8T": [
+                    "Contabilidad Administrativa",
+                    "Practica Contable",
+                    "NIIAS Aseguramiento de la Información",
+                    "IVA retención en la Fuente",
+                    "Investigación III / Emprendimiento",
+                    "Analítica"
+                ],
+                "nivel_9T": [
+                    "Desarrollo Sostenible",
+                    "Practica NIIF",
+                    "Gerencia Estratégica de Impuestos",
+                    "Revisoría Fiscal",
+                    "Trabajo de Grado",
+                    "Electiva / Economía Internacional"
+                ]
+            }
+        ]
+    }
+}
