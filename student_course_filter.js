@@ -129,9 +129,6 @@ const toJson = (workbook) => {
     makeUser(result, courseDB, userExcel);
     const getTheCoruse = makeCourse(courseDB);
     //Make the de consolidate object date Excel
-
-
-
     for(const key in getTheCoruse){
         for(const full in getTheCoruse[key]){ 
             const finalLevel = getTheCourseLevel(full);
@@ -162,23 +159,6 @@ const toJson = (workbook) => {
             };
         };
     };
-
-
-   /*  for(const full in getTheCoruse.transition){ 
-        const finalLevel = getTheCourseLevel(full);
-        if(finalLevel !== undefined){
-            const courseUsers = new courseUser(
-                full, 
-                finalLevel,
-                "Diurnos",
-                "Nocturnos",
-                "Sabatinos", 
-                getTheCoruse.transition[full].length, getTheCoruse.transition[full]
-            );
-            userInCourseT.push(courseUsers);
-        };
-    }; */
-    
     ExcelReady.classList.remove("download-disable");
     for(let i of attributes) ExcelReady.setAttribute(i[0], i[1]);
     return [userInCourseR, userInCourseT];
