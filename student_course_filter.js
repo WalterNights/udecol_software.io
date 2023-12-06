@@ -46,9 +46,7 @@ const attributes = [
 ];
 const udecolProgram = [
     "Administración Financiera",
-    "Contaduría Pública",
-    "Finanazas y Banca",
-    "NIIF - NIC"
+    "Contaduría Pública"
 ];
 
 getProgramName.addEventListener("keydown", function (event){
