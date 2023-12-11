@@ -7,12 +7,16 @@ var userField;
 var courseUsers;
 var downloadReady;
 const getDataBase = Object.entries(database);
-const getProgramName =  document.getElementById("getProgramName");
-const exelInspectorModalButton = document.getElementById("exelInspectorModalButton");
+const findUser = document.getElementById('findUser');
 const fileExcel = document.getElementById('docpicker');
 const ExcelReady = document.getElementById('ExcelReady');
-const findUser = document.getElementById('findUser');
 const cardStudent = document.getElementById('cardStudent');
+const programPlan =  document.getElementById("programPlan");
+const programName =  document.getElementById("programName");
+const getProgramData =  document.getElementById("getProgramData");
+const excelInspector = document.querySelector(".excel-inspector");
+const exelInspectorModalButton = document.getElementById("exelInspectorModalButton");
+const excelInspectorModal = document.querySelector(".excel-inspector-modal-container");
 const userDB = [];
 const userInCourseR = [];
 const userInCourseT = [];
@@ -49,14 +53,12 @@ const udecolProgram = [
     "Contaduría Pública"
 ];
 
-getProgramName.addEventListener("keydown", function (event){
-    if(event.key === 'Enter'){
-        programN = getProgramName.value;
-        if(udecolProgram.includes(programN)){
-            document.querySelector(".excel-inspector").style.display = "block";
-        }else{
-            document.querySelector(".excel-inspector-modal-container").style.display = "flex";
-        };
+getProgramData.addEventListener("click", function (){
+    programN = programName.value;
+    if(udecolProgram.includes(programN) && programPlan.value !== ''){
+        excelInspector.style.display = "flex";
+    }else{
+        excelInspectorModal.style.display = "flex";
     };
 });
 
@@ -280,7 +282,7 @@ const getTheCourseLevel = (value, level) => {
                                                         course_level: val_4, 
                                                         user_level: level, 
                                                         course: value
-                                                    }
+                                                    };
                                                     return UCl;
                                                 };
                                             };
@@ -326,48 +328,6 @@ const downloadExcel = (data1, data2, filename = "consolidad estudiantes por asig
         XLSX.utils.book_append_sheet(book, sheet3, 'Consolidado Transición');
         XLSX.writeFile(book, filename);
     };
-};
-
-//Triggered the user in file checker
-const checkUser = () => {
-    userDB.forEach(item => {
-        if (findUser.value !== '') {
-            for (let val in item) {
-                if (item[val].toString().match((findUser.value).toUpperCase())) {
-                    const newCardStudent =
-                            '<div class="card-student">' +
-                                '<div>' +
-                                    '<h2>Datos del Estudiante</h2>' +
-                                '</div>' +
-                                '<div class="card-student-name">' +
-                                    '<p><b>Nombre: </b>' + item.Usuario + '</p>' +
-                                    '<p><b>Documento: </b>' + item.Documento + '</p>' +
-                                    '<p><b>Jornada: </b>' + item.Jornada + '</p>' +
-                                    '<p><b>Nivel: </b>' + item.Nivel + '</p>' +
-                                    '<p><b>Periodo: </b>' + item.Periodo + '</p>' +
-                                '</div>' +
-                                '<div>' +
-                                    '<h2>Asignaturas Pendientes</h2>' +
-                                '</div>' +
-                                '<div id="cardStudentCourses" class="cardStudentCourses card-student-courses display-center">' +
-                                '</div>' +
-                            '</div>'
-                        ;
-                    cardStudent.innerHTML = newCardStudent;
-                    Object.keys(item).forEach(itemCourse => {
-                        if (!fields.includes(itemCourse)) {
-                            const cardCourse =
-                                '<div class="course-card display-center">' +
-                                    '<p>' + itemCourse + '</p>' +
-                                '</div>'
-                                ;
-                            document.querySelector(".cardStudentCourses").innerHTML += cardCourse;
-                        };
-                    });
-                };
-            };
-        }
-    });
 };
 
 //Export DOM fucntions

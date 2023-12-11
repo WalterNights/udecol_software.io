@@ -1,4 +1,135 @@
 {
+    "administración_financiera_2019": {
+        "regular":[
+            {
+                "nivel_1": [
+                    "Fundamentos de Administración",
+                    "Expresión Oral y Escrita",
+                    "Sistemas",
+                    "Fundamentos Matemáticos",
+                    "Ética Profesional",
+                    "Fundamentos de Contabilida"
+                ],
+                "nivel_2": [
+                    "Planeación y Organización",
+                    "Costos y Presupuesto",
+                    "Fundamentos de Economía",
+                    "Cálculo Diferencial",
+                    "Pensamiento Sistémico",
+                    "Administración de la Producción"
+                ],
+                "nivel_3": [
+                    "Dirección y Control",
+                    "Estadística y Probabilidades",
+                    "Planeación Financiera",
+                    "Cálculo Integral",
+                    "Microeconomía",
+                    "Administración de Talento Humano"
+                ],
+                "nivel_4": [
+                    "Seminario de Investigación I",
+                    "Análisis Financiero",
+                    "Ingeniería Económica",
+                    "Investigación de Operaciones",
+                    "Macroeconomía",
+                    "Algoritmos y Programación"
+                ],
+                "nivel_5": [
+                    "Fundamentos de Mercadeo",
+                    "Gerencia Financiera", 
+                    "Electiva I - Marco Laboral",
+                    "Estadística Inferencial",
+                    "Legislación Financiera",
+                    "Psicología Organizacional"
+                ],
+                "nivel_6": [
+                    "Mercados Financieros",
+                    "Electiva II - Sist Fro estat",
+                    "Finanzas Corporativas",
+                    "Ingeniería Econ Avanzada",
+                    "Economía y Comercio Exterior"
+                ],
+                "nivel_7": [
+                    "Electiva III - Negocia Internal",
+                    "Profundización 1 (I,II)",
+                    "Economía Colombiana",
+                    "Cultura Ciudadana",
+                    "Econometría"
+                ],
+                "nivel_8": [
+                    "Finanzas Públicas",
+                    "Cátedra de Emprendimiento",
+                    "Profundización 2 (I,II)",
+                    "Consultorio Financiero"
+                ],
+                "nivel_9": [
+                    "Seminario de Investigación II",
+                    "Electiva IV - Plan Estatal",
+                    "Cátedra Financiera Empresarial",
+                    "Profundización 3 (I,II)"
+                ],
+                "nivel_10": [
+                    "Trabajo de Grado",
+                    "Desarrollo Sostenible"
+                ]
+            }
+        ],
+        "transición": [
+            {
+                "nivel_3T": [
+                    "Administración / Planeación / Mercadeo",
+                    "Fundamentos de Contabilidad",
+                    "Fundamentos Micro / Macro",
+                    "Fundamentos Matemáticos / Calculo",
+                    "Sistemas / Pensamiento Sistémico",
+                    "Exp / Ética / Cultura Ciudadana / Psicología",
+                    "Administración de la Producción"
+                ],
+                "nivel_4T": [
+                    "Dirección y Control",
+                    "Costos y Presupuesto",
+                    "Estadística y Probabilidades",
+                    "Administración de Talento Humano",
+                    "Legislación Financiera",
+                    "Algoritmos y Programación"
+                ],
+                "nivel_5T": [
+                    "Planeación Financiera",
+                    "Seminario de Investigación I",
+                    "Cálculo Integral",
+                    "Finanzas Públicas / Electiva II - Sis Fro",
+                    "Ingeniería Económica",
+                    "Investigación de Operaciones"
+                ],
+                "nivel_6T": [
+                    "Análisis Financiero",
+                    "Electiva I - Marco Laboral",
+                    "Gerencia Financiera",
+                    "Estadística Inferencial",
+                    "Ingeniería Econ Avanzada"
+                ],
+                "nivel_7T": [
+                    "Electiva III - Negocia Internal",
+                    "Mercados Financieros",
+                    "Finanzas Corporativas",
+                    "Econometría",
+                    "Profundización 2 (I,II)"
+                ],
+                "nivel_8T": [
+                    "Seminario de Investigación II",
+                    "Consultorio Financiero",
+                    "Profundización 1 (I,II) Valoración",
+                    "Economía Colombiana"
+                ],
+                "nivel_9T": [
+                    "Cátedra Financiera",
+                    "Trabajo de Grado",
+                    "Desarrollo Sostenible",
+                    "Profundización 3 (I,II)"
+                ]
+            }
+        ]
+    },
     "administración_financiera": {
         "regular":[
             {
@@ -133,6 +264,141 @@
             }
         ]
     },
+    "contaduría_pública_2019": {
+        "regular":[
+            {
+                "nivel_1": [
+                    "Fundamentos Matemáticos",
+                    "Fundamentos de Administración Moderna",
+                    "Sistemas Computacionales",
+                    "Formación Humana",
+                    "Fundamentos Legales del Contador",
+                    "Fundamentos de Contables"
+                ],
+                "nivel_2": [
+                    "Matemáticas aplicadas",
+                    "Hojas Electrónicas",
+                    "Contabilidad General",
+                    "Teorías de la Estategia Organizacional",
+                    "Legislación Comercial Colombiana",
+                    "Investigación Contable I"
+                ],
+                "nivel_3": [
+                    "Estadística Descriptiva e Inferencial",
+                    "Gestión Comercial (Compras)",
+                    "Microeconomía",
+                    "Normatividad Tributaria",
+                    "Aseguramiento de la Calidad",
+                    "Contabilidad de Costos"
+                ],
+                "nivel_4": [
+                    "Teorías de la Administración Financiera",
+                    "Legislación y Régimen Cambiario",
+                    "Ingeniería Económica",
+                    "Procedimientos Tributarios y Contables",
+                    "Macroeconomía",
+                    "Fudamentos Investigativos"
+                ],
+                "nivel_5": [
+                    "Presupuestos",
+                    "Teorías modernas del Mercadeo",
+                    "Comunicación Organizacional", 
+                    "Sistemas de Control Interno y Auditorías",
+                    "Marco Laboral Colombiano",
+                    "Legislación Económica y de Finanzas"
+                ],
+                "nivel_6": [
+                    "Contabilidad Administrativa I",
+                    "Finanzas en las Coproraciones",
+                    "Sistema Financiero Estatal",
+                    "Economía Mundial",
+                    "E-Commerce"
+                ],
+                "nivel_7": [
+                    "Contabilidad Estatal Colombiana",
+                    "Valoración Empresarial",
+                    "Negociación Internacional",
+                    "Entorno Sociopolítico",
+                    "Revisoría Fiscal"
+                ],
+                "nivel_8": [
+                    "Pensamiento Empresarial",
+                    "Presupuesto Estatal",
+                    "Control Fiscal y Aduanero",
+                    "Normas Internacionales de Contabilidad e Información Financiera NIIF/NIC",
+                    "Contabilidad Administartiva II"
+                ],
+                "nivel_9": [
+                    "Investigación Contable II",
+                    "Planificación Estatal",
+                    "Optativa I - Practica Contable",
+                    "Optativa II - Practica Contable"
+                ],
+                "nivel_10": [
+                    "Trabajo de Grado",
+                    "Optativa III - Paquetes Contables",
+                    "Optativa IV - Actualización Tributaria",
+                    "Costos Ambientales"
+                ]
+            }
+        ],
+        "transición": [
+            {
+                "nivel_3T": [
+                    "Fundamentos Matemáticos / Aplicadas",
+                    "Teorías de la Administración / Estategia Organizacional / Mercadeo",
+                    "Hojas Electrónicas (Sistemas)",
+                    "Micro-Macro",
+                    "Fundamentos Legales / Entorno Sociopolítico / Comunicación Organizacional",
+                    "Fundamentos Contables"
+                ],
+                "nivel_4T": [
+                    "Legislación Económica y de Finanzas / Leg Comercial",
+                    "Contabilidad General",
+                    "Gestión Comercial (Compras)",
+                    "Estadística Descriptiva e Inferencial",
+                    "Investigación Contable I / Inventarios",
+                    "Aseguramiento Calidad"
+                ],
+                "nivel_5T": [
+                    "Ingeniería Económica",
+                    "Contabilidad de Costos",
+                    "Fundamentos Investigativos",
+                    "Presupuesto Estatal / Sist Fro Estatal",
+                    "Normatividad Tributaria",
+                    "Legislación y Régimen Cambiario"
+                ],
+                "nivel_6T": [
+                    "Presupuestos",
+                    "Teorías de la Administración Financiera",
+                    "Procedimientos Tributarios y Contables",
+                    "Sistemas de Control Interno y Auditorías",
+                    "Marco Laboral"
+                ],
+                "nivel_7T": [
+                    "Economía Mundial / Negociación Internacional / E-Commerce",
+                    "Contabilidad Estatal / Planificación Estatal",
+                    "Contabilidad Administrativa I/ Costos II",
+                    "Revisoría Fiscal",
+                    "Finanzas en las Coproraciones"
+                ],
+                "nivel_8T": [
+                    "Control Fiscal y Aduanero",
+                    "Valoración Empresarial",
+                    "Investigación Contable II / Pensamiento Empresarial",
+                    "Optativa I / II Practica Contable",
+                    "Normas Internacionales de Contabilidad e Información Financiera NIIF/NIC"
+                ],
+                "nivel_9T": [
+                    "Contabilidad Administartiva II",
+                    "Costos Ambientales",
+                    "Optativa III - Paquetes",
+                    "Optativa IV - Actualiza Tributaria",
+                    "Trabajo de Grado"
+                ]
+            }
+        ]
+    },
     "contaduría_pública": {
         "regular":[
             {
@@ -215,7 +481,7 @@
                     "Hojas Electrónicas (Sistemas)",
                     "Matemáticas I / II",
                     "Micro-Macro",
-                    "Legislación Comercial Financiera"
+                    "Legislación Comercial / Financiera"
                 ],
                 "nivel_4T": [
                     "Lectura Crítica",

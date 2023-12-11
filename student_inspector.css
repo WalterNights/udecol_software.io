@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 .display-center {
     display: flex;
     flex-wrap: wrap;
@@ -11,25 +15,64 @@
     align-items: center;
 }
 
-.margin-top-1 {
-    margin-top: 1rem;
+.display-column {flex-direction: column;}
+
+.margin-top-1 {margin-top: 1rem;}
+.margin-top-3 {margin-top: 3rem;}
+.margin-top-5 {margin-top: 5rem;}
+
+.dividing-line {
+    width: 90%;
+    border: 1px solid #d0d0d0;
 }
 
-.program-name {
-    width: 85vw;
+.main-section {
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.choice-value-section h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.program-name,
+.program-plan {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     gap: 2rem;
 }
 
+.program-name {width: 55%;}
+
+.program-plan {width: 25%;}
+
+.choice-value-section button {width: 85%;}
+
 .excel-inspector {
     display: none;
+    height: 30rem;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
 .student-courses-inspector {
+    width: 60vw;
+    height: 70vh;
+    justify-content: flex-start;
+    gap: 5rem;
+    flex-wrap: nowrap;
+    background-color: white;
+    box-shadow: 3px 2px 8px -5px black;
+    border-radius: 25px;
+    font-size: 1.5rem;
     font-family: system-ui, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+.student-courses-inspector section {width: 100%;}
 
 .download-button {
     color: #1d1c1e;
@@ -38,9 +81,9 @@
 }
 
 .student-courses-inspector input[type=file]::file-selector-button,
-.student-courses-inspector .search-button,
 .student-courses-inspector .download-disable,
-.student-courses-inspector .download-button {
+.student-courses-inspector .download-button,
+.choice-value-section button {
     padding: 1rem;
     margin: .5rem;
     border: none;
@@ -51,26 +94,20 @@
 }
 
 .student-courses-inspector input[type=file]::file-selector-button:hover,
-.student-courses-inspector .search-button:hover,
 .student-courses-inspector .download-button:hover {
     transform: scale(1.1);
     transition: all ease-in-out .1s;
 }
 
-.excel-user-search {
-    width: 15vw;
+.choice-value-section button:hover {
+    background-color: #00ff88;
+    transition: all ease-in-out .1s;
 }
 
 .student-courses-inspector input[type=text] {
     padding: 1rem;
     border: solid 1px #075299;
     border-radius: 15px;
-}
-
-.excel-result-search {
-    width: 85vw;
-    min-height: 4rem;
-    gap: 2rem;
 }
 
 .download-disable {
@@ -102,7 +139,6 @@
     gap: 0.8rem;
 }
 
-.excel-result-search,
 .card-student-name,
 .card-student-courses {
     border: solid 1px grey;
@@ -122,6 +158,8 @@
     text-align: center;
 }
 
+.success-message {height: 15%;}
+
 .success-message h2 {
     color: #00ff88;
     animation: succes-text 1000ms linear 1s infinite;
@@ -140,18 +178,18 @@
 }
 .excel-inspector-modal-content {
     width: 50%;
-    height: 200px;
+    height: 27rem;
     justify-content: space-evenly;
     flex-direction: column;
+    gap: 3rem;
+    font-size: 20px;
     background-color: white;
     border-radius: 15px;
     padding: 50px;
     z-index: 1;
 }
 
-.excel-inspector-modal-content p {
-    text-align: center;
-}
+.excel-inspector-modal-content p {text-align: center;}
 
 .excel-inspector-modal-content button {
     padding: 2% 40%;

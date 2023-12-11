@@ -10,49 +10,58 @@
 </head>
 
 <body>
-    <div class="student-courses-inspector">
-        <section class="display-center margin-top-1">
-            <div class="program-name">
-                <label for="program">Para iniciar, escriba o escoja el nombre del programa y luego presione la tecla <b>ENTER</b></label>
-                <input id="getProgramName" name="program-name" list="pn-option" type="text" placeholder="Ejemplo: administración financiera">
-                <datalist id="pn-option">
-                    <option value="Administración Financiera"></option>
-                    <option value="Contaduría Pública"></option>
-                    <option value="Finanazas y Banca"></option>
-                    <option value="NIIF - NIC"></option>
-                </datalist>
-            </div>
-        </section>
-        <section class="excel-inspector">
-            <div class="display-center">
-                <p><b>Campos mínimos que debe tener el Excel. Nombre, Apellido, No de Cédula, Jornada, Nivel, Período y todas las asignaturas del programa</b></p>
-            </div>
-            <div class="display-center margin-top-1">
-                <label for="docpicker">Selecciona el archivo de EXCEL (.xlsx)</label>
-                <input name="docpicker" type="file" id="docpicker">
-                <div>
-                    <input id="findUser" class="excel-user-search" type="text" placeholder="Escribe el nombre o documento del estudiante">
-                    <button id="checkUser" class="search-button" onclick="checkUser()">Revisar un Usario</button>
+    <section class="main-section display-center">
+        <div class="student-courses-inspector display-center display-column">
+            <section class="choice-value-section margin-top-5">
+                <h2>Para iniciar llene los campos y luego presione el botón de Examinar</b></h2>
+                <div class="display-center margin-top-5">
+                    <div class="program-name">
+                        <label for="program">Escriba o escoja el nombre del programa</label>
+                        <input id="programName" name="program-name" list="program-option" type="text" placeholder="Ejemplo: administración financiera">
+                        <datalist id="program-option">
+                            <option value="Administración Financiera"></option>
+                            <option value="Contaduría Pública"></option>
+                            <option value="Finanazas y Banca"></option>
+                            <option value="NIIF - NIC"></option>
+                        </datalist>
+                    </div>
+                    <div class="program-plan">
+                        <label for="program">Escriba o escoja el plan académico</label>
+                        <input id="programPlan" type="text" list="plan-option" placeholder="Ejemplo: Plan de Estudios 2021">
+                        <datalist id="plan-option">
+                            <option value="Plan de Estudios Actual"></option>
+                            <option value="Plan de Estudios 2019"></option>
+                            <option value="Plan de Estudios 2021"></option>
+                        </datalist>
+                    </div>
                 </div>
-                <div>
-                    <button id="ExcelReady" class="download-disable" title="Aún no has cargado un archivo .xlsx">Descargar Excel Consolidado</button>
+                <div class="display-center margin-top-3">
+                    <button id="getProgramData">Examinar</button>
                 </div>
-            </div>
-            <div class="display-center margin-top-1">
-                <div id="cardStudent" class="excel-result-search display-center">
-                    <p>Busca un estudiante para ver las asignaturas pendientes</p>
+            </section>
+            <div class="dividing-line"></div>
+            <section class="excel-inspector">
+                <div class="display-center">
+                    <p><b>Campos mínimos que debe tener el Excel. Nombre, Apellido, No de Cédula, Jornada, Nivel, Período y todas las asignaturas del programa</b></p>
                 </div>
+                <div class="display-center margin-top-1">
+                    <label for="docpicker">Selecciona el archivo de EXCEL (.xlsx)</label>
+                    <input name="docpicker" type="file" id="docpicker">
+                    <div>
+                        <button id="ExcelReady" class="download-disable" title="Aún no has cargado un archivo .xlsx">Descargar Excel Consolidado</button>
+                    </div>
+                </div>
+                <div class="success-message display-center"><h2 id="successMessage"></h2></div>
+            </section>
+            <div class="excel-inspector-modal-container">
+                <div class="excel-inspector-modal-content display-center">
+                    <p>Falta alguno de los 2 campos por seleccionar o bien los datos no corresponden a los programas de U de Colombia</p>
+                    <button id="exelInspectorModalButton">Vuelve a intentarlo</button>
+                </div>
+                <div class="excel-inspector-modal-background"></div>
             </div>
-            <div class="success-message display-center"><h2 id="successMessage"></h2></div>
-        </section>
-        <div class="excel-inspector-modal-container">
-            <div class="excel-inspector-modal-content display-center">
-                <p>El programa seleccionado no se encuentra, tenga en cuenta la ortografía o revise que sea un programa dentro de la oferta de U DE COLOMBIA.</p>
-                <button id="exelInspectorModalButton">Vuelve a intentarlo</button>
-            </div>
-            <div class="excel-inspector-modal-background"></div>
         </div>
-    </div>
+    </section>
     <script type="module" src="./student_course_filter.js"></script>
 </body>
 
