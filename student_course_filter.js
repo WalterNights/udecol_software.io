@@ -263,9 +263,17 @@ const makeCourse = (courseDB) => {
 
 //Triggered the course level checker
 const getTheCourseLevel = (value, level) => {
+    let getPlan;
+    if(programPlan.value.endsWith("Actual")){
+        getPlan = "2016"
+    }else if(programPlan.value.endsWith("2019")){
+        getPlan = "2019"
+    }else if(programPlan.value.endsWith("2021")){
+        getPlan = "2021"
+    };
     for(const [key_1, val_0] of Object.entries(getDataBase)) {
         for(const val_1 in val_0){
-            const convertPMN = programN.toLocaleLowerCase().replace(/\s/g, '_');
+            const convertPMN = programN.toLocaleLowerCase().replace(/\s/g, '_') + "_" + getPlan;
             if(convertPMN.match(val_0[0])){
                 for(const [key_2, val_2] of Object.entries(val_0[val_1])) {
                     if (typeof (val_2) === "object") {
@@ -332,4 +340,3 @@ const downloadExcel = (data1, data2, filename = "consolidad estudiantes por asig
 
 //Export DOM fucntions
 window.downloadExcel = downloadExcel;
-window.checkUser = checkUser;
