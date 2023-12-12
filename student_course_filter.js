@@ -340,8 +340,13 @@ const downloadExcel = (data1, data2, filename = "consolidad estudiantes "+ conve
         XLSX.utils.book_append_sheet(book, sheet2, 'Consolidado Regulares');
         XLSX.utils.book_append_sheet(book, sheet3, 'Consolidado Transición');
         XLSX.writeFile(book, filename);
+        const myTimeout = setTimeout(clearFields, 2000);
     };
 };
+
+const clearFields = () => location.reload();
+
+
 
 //Export DOM fucntions
 window.downloadExcel = downloadExcel;
