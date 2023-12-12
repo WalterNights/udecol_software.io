@@ -15,11 +15,21 @@ html {
     align-items: center;
 }
 
-.display-column {flex-direction: column;}
+.display-column {
+    flex-direction: column;
+}
 
-.margin-top-1 {margin-top: 1rem;}
-.margin-top-3 {margin-top: 3rem;}
-.margin-top-5 {margin-top: 5rem;}
+.margin-top-1 {
+    margin-top: 1rem;
+}
+
+.margin-top-3 {
+    margin-top: 3rem;
+}
+
+.margin-top-5 {
+    margin-top: 5rem;
+}
 
 .dividing-line {
     width: 90%;
@@ -46,11 +56,17 @@ html {
     gap: 2rem;
 }
 
-.program-name {width: 55%;}
+.program-name {
+    width: 40%;
+}
 
-.program-plan {width: 25%;}
+.program-plan {
+    width: 20%;
+}
 
-.choice-value-section button {width: 85%;}
+.choice-value-section button {
+    width: 85%;
+}
 
 .excel-inspector {
     display: none;
@@ -60,8 +76,6 @@ html {
 }
 
 .student-courses-inspector {
-    width: 60vw;
-    height: 70vh;
     justify-content: flex-start;
     gap: 5rem;
     flex-wrap: nowrap;
@@ -72,7 +86,9 @@ html {
     font-family: system-ui, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.student-courses-inspector section {width: 100%;}
+.student-courses-inspector section {
+    width: 100%;
+}
 
 .download-button {
     color: #1d1c1e;
@@ -93,9 +109,14 @@ html {
     cursor: pointer;
 }
 
-.student-courses-inspector input[type=file]::file-selector-button:hover,
-.student-courses-inspector .download-button:hover {
+.student-courses-inspector input[type=file]::file-selector-button:hover {
     transform: scale(1.1);
+    transition: all ease-in-out .1s;
+}
+
+.student-courses-inspector .download-button:hover {
+    background-color: #00a95a;
+    color: white;
     transition: all ease-in-out .1s;
 }
 
@@ -158,13 +179,6 @@ html {
     text-align: center;
 }
 
-.success-message {height: 15%;}
-
-.success-message h2 {
-    color: #00ff88;
-    animation: succes-text 1000ms linear 1s infinite;
-}
-
 .excel-inspector-modal-container {
     width: 100vw;
     height: 100vh;
@@ -176,9 +190,8 @@ html {
     position: absolute;
     top: 0;
 }
+
 .excel-inspector-modal-content {
-    width: 50%;
-    height: 27rem;
     justify-content: space-evenly;
     flex-direction: column;
     gap: 3rem;
@@ -189,10 +202,12 @@ html {
     z-index: 1;
 }
 
-.excel-inspector-modal-content p {text-align: center;}
+.excel-inspector-modal-content p {
+    text-align: center;
+}
 
 .excel-inspector-modal-content button {
-    padding: 2% 40%;
+    width: 100%;
     border: none;
     border-radius: 15px;
     background-color: #075299;
@@ -213,18 +228,85 @@ html {
     top: 0;
 }
 
-/*==========================================KEYFRAME=========================================*/
 
-@keyframes succes-text {
-    0% {
-        transform: scale(1.1);
+@media (max-width: 540px) {
+
+    .choice-value-container {
+        flex-direction: column;
+        gap: 2rem;
     }
-    50% {
-        transform: scale(1.18);
+
+    .program-name,
+    .program-plan {width: 80%;}
+
+    .student-courses-inspector section {width: 85%;}
+
+    .student-courses-inspector {
+        width: 80vw;
+        min-height: 70vh;
     }
-    100% {
-        transform: scale(1.1);
+
+    .upload-choice {gap: 2rem;}
+
+    .upload-choice #ExcelReady {width: 60vw;}
+
+    .excel-inspector p {text-align: center;}
+
+    .excel-inspector-modal-content {
+        width: 80vw;
+        height: 35%;
     }
+
+    .excel-inspector-modal-content button {padding: 2rem 0;}
 }
 
-/*==========================================KEYFRAME=========================================*/
+@media (min-width: 540px) {
+
+    .choice-value-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .program-name,
+    .program-plan {width: 80%;}
+
+    .student-courses-inspector section {width: 85%;}
+
+    .student-courses-inspector {
+        width: 80vw;
+        min-height: 70vh;
+    }
+
+    .upload-choice {gap: 2rem;}
+
+    .upload-choice #ExcelReady {width: 60vw;}
+
+    .excel-inspector p {text-align: center;}
+
+    .excel-inspector-modal-content {
+        width: 80vw;
+        height: 35%;
+    }
+
+    .excel-inspector-modal-content button {padding: 2rem 0;}
+}
+
+@media (min-width: 1200px) {
+
+    .excel-inspector-modal-content {width: 60vw;}
+
+    .excel-inspector-modal-content button {padding: 1.5rem 0;}
+}
+
+@media (min-width: 1600px) {
+
+    .student-courses-inspector {
+        width: 60vw;
+    }
+
+    .upload-choice #ExcelReady {
+        width: 100%;
+    }
+
+    .excel-inspector-modal-content {width: 40vw;}
+}

@@ -14,7 +14,7 @@
         <div class="student-courses-inspector display-center display-column">
             <section class="choice-value-section margin-top-5">
                 <h2>Para iniciar llene los campos y luego presione el botón de Examinar</b></h2>
-                <div class="display-center margin-top-5">
+                <div class="choice-value-container display-center margin-top-5">
                     <div class="program-name">
                         <label for="program">Escriba o escoja el nombre del programa</label>
                         <input id="programName" name="program-name" list="program-option" type="text" placeholder="Ejemplo: administración financiera">
@@ -44,14 +44,16 @@
                 <div class="display-center">
                     <p><b>Campos mínimos que debe tener el Excel. Nombre, Apellido, No de Cédula, Jornada, Nivel, Período y todas las asignaturas del programa</b></p>
                 </div>
-                <div class="display-center margin-top-1">
+                <div class="upload-choice display-center margin-top-1">
                     <label for="docpicker">Selecciona el archivo de EXCEL (.xlsx)</label>
                     <input name="docpicker" type="file" id="docpicker">
                     <div>
                         <button id="ExcelReady" class="download-disable" title="Aún no has cargado un archivo .xlsx">Descargar Excel Consolidado</button>
                     </div>
+
+                    <p class="arrow-container"><span class="up-arrow"></span></p>
+
                 </div>
-                <div class="success-message display-center"><h2 id="successMessage"></h2></div>
             </section>
             <div class="excel-inspector-modal-container">
                 <div class="excel-inspector-modal-content display-center">

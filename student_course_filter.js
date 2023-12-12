@@ -257,7 +257,6 @@ const makeCourse = (courseDB) => {
             };
         });
     });
-    document.getElementById("successMessage").innerHTML = "ARCHIVO LISTO PARA DESCARGAR"
     return courseDB;
 };
 
