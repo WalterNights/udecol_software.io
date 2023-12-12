@@ -5,6 +5,7 @@ import database from './dataBase.json' assert { type: "json"};
 var programN;
 var userField;
 var courseUsers;
+var convertPMN;
 var downloadReady;
 const getDataBase = Object.entries(database);
 const findUser = document.getElementById('findUser');
@@ -112,6 +113,13 @@ const processExcel = (data) => {
     const workbook = XLSX.read(data, { type: 'binary' });
     const jsonData = toJson(workbook);
     downloadReady = jsonData;
+
+    if(downloadReady[0].length !== 0 && downloadReady[1].length !== 0){
+        ExcelReady.classList.remove("download-disable");
+        for(let i of attributes) ExcelReady.setAttribute(i[0], i[1]);
+    }else {
+
+    };
 };
 
 //Triggered the xlsx file convert to data JS
@@ -161,8 +169,6 @@ const toJson = (workbook) => {
             };
         };
     };
-    ExcelReady.classList.remove("download-disable");
-    for(let i of attributes) ExcelReady.setAttribute(i[0], i[1]);
     return [userInCourseR, userInCourseT];
 };
 
@@ -271,9 +277,9 @@ const getTheCourseLevel = (value, level) => {
         getPlan = "2021"
     };
     for(const [key_1, val_0] of Object.entries(getDataBase)) {
-        for(const val_1 in val_0){
-            const convertPMN = programN.toLocaleLowerCase().replace(/\s/g, '_') + "_" + getPlan;
-            if(convertPMN.match(val_0[0])){
+        convertPMN = programN.toLocaleLowerCase().replace(/\s/g, '_') + "_" + getPlan;
+        if(convertPMN.match(val_0[0])){
+            for(const val_1 in val_0){
                 for(const [key_2, val_2] of Object.entries(val_0[val_1])) {
                     if (typeof (val_2) === "object") {
                         for(const [key_3, val_3] of Object.entries(val_2)) {
@@ -314,7 +320,7 @@ const getTheCourseLevel = (value, level) => {
 };
 
 //Triggered the download process
-const downloadExcel = (data1, data2, filename = "consolidad estudiantes por asignaturas siguiente Periodo.xlsx") => {
+const downloadExcel = (data1, data2, filename = "consolidad estudiantes "+ convertPMN +".xlsx") => {
     let dataSheet1;
     let dataSheet2;
     let dataSheet3;
