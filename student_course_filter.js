@@ -51,7 +51,10 @@ const attributes = [
 ];
 const udecolProgram = [
     "Administración Financiera",
-    "Contaduría Pública"
+    "Contaduría Pública",
+    "Derecho",
+    "Profesional en Sistemas Información Organizacional",
+    "Seguridad y Salud en el Trabajo"
 ];
 
 getProgramData.addEventListener("click", function (){
@@ -113,8 +116,7 @@ const processExcel = (data) => {
     const workbook = XLSX.read(data, { type: 'binary' });
     const jsonData = toJson(workbook);
     downloadReady = jsonData;
-
-    if(downloadReady[0].length !== 0 && downloadReady[1].length !== 0){
+    if(downloadReady[0].length !== 0 || downloadReady[1].length !== 0){
         ExcelReady.classList.remove("download-disable");
         for(let i of attributes) ExcelReady.setAttribute(i[0], i[1]);
     }else {
@@ -275,6 +277,8 @@ const getTheCourseLevel = (value, level) => {
         getPlan = "2019"
     }else if(programPlan.value.endsWith("2021")){
         getPlan = "2021"
+    }else if(programPlan.value.endsWith("Único")){
+        getPlan = "único"
     };
     for(const [key_1, val_0] of Object.entries(getDataBase)) {
         convertPMN = programN.toLocaleLowerCase().replace(/\s/g, '_') + "_" + getPlan;
@@ -338,7 +342,9 @@ const downloadExcel = (data1, data2, filename = "consolidad estudiantes "+ conve
         const book = XLSX.utils.book_new();
         XLSX.utils.book_append_sheet(book, sheet1, 'Lista de Estudiantes');
         XLSX.utils.book_append_sheet(book, sheet2, 'Consolidado Regulares');
-        XLSX.utils.book_append_sheet(book, sheet3, 'Consolidado Transición');
+        if(programN !== "Derecho"){
+            XLSX.utils.book_append_sheet(book, sheet3, 'Consolidado Transición');
+        };
         XLSX.writeFile(book, filename);
         const myTimeout = setTimeout(clearFields, 2000);
     };

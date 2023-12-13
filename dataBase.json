@@ -533,5 +533,351 @@
                 ]
             }
         ]
+    },
+    "derecho_único": {
+        "regular": [
+            {
+                "nivel_1": [
+                    "Introducción al Derecho",
+                    "Historia del Derecho",
+                    "Competencias Ciudadanas",
+                    "Sociología Jurídica",
+                    "Competencias Comunicativas",
+                    "Teoría del Estado"
+                ],
+                "nivel_2" : [
+                    "Constitucional Colombiano",
+                    "Razonamiento Cuantitativo",
+                    "Constitucional General",
+                    "Hermenéutica y Argumentación Jurídica",
+                    "Filosofía del Derecho",
+                    "Geopolítica Contemporánea"
+                ],
+                "nivel_3": [
+                    "Familia",
+                    "Bienes",
+                    "Personas",
+                    "Comercial",
+                    "Obligaciones",
+                    "Integrativa I"
+                ],
+                "nivel_4": [
+                    "Contratos",
+                    "Sociedades",
+                    "Sucesiones",
+                    "Responsabilidad Civil",
+                    "Títulos Valores",
+                    "Integrativa II",
+                    "Seguros"
+                ],
+                "nivel_5": [
+                    "Administrativo",
+                    "Teoría General del Proceso",
+                    "Tributario",
+                    "Ambiental",
+                    "Internacional",
+                    "Integrativa III"
+                ],
+                "nivel_6": [
+                    "Penal General",
+                    "Penal Internacional",
+                    "Penal Especial",
+                    "Criminología y Medicina Legal",
+                    "Mecanismos Alternativos Solución de Conflictos",
+                    "Integrativa IV"
+                ],
+                "nivel_7": [
+                    "Laboral Individual",
+                    "Laboral Colectivo",
+                    "Investigación Jurídica",
+                    "Seguridad Social",
+                    "Laboral Administrativo",
+                    "Integrativa V"
+                ],
+                "nivel_8": [
+                    "Procesal Administrativo",
+                    "Procesal Laboral",
+                    "Investigación Jurídica II",
+                    "Procesal Civil",
+                    "Procesal Penal",
+                    "Integrativa VI"
+                ],
+                "nivel_9": [
+                    "Propiedad Intelectual",
+                    "Consultorio Jurídico I",
+                    "Teoría General de la Prueba",
+                    "Derecho Informático y Comercio Electrónico",
+                    "Integrativa VII"
+                ],
+                "nivel_10": [
+                    "Práctica Prode",
+                    "Consultorio Jurídico II",
+                    "Ética",
+                    "Notariado y Registro"
+                ]
+            }
+        ]
+    },
+    "seguridad_y_salud_en_el_trabajo_único": {
+        "regular": [
+            {
+                "nivel_1": [
+                    "Matemáticas I",
+                    "Competencias Comunicativas",
+                    "Sistemas",
+                    "Introducción a la Seguridad y Salud en el Trabajo",
+                    "Administración I",
+                    "Legislación Laboral"
+                ],
+                "nivel_2": [
+                    "Matemáticas II",
+                    "Derecho Constitucional",
+                    "Hojas Electrónicas",
+                    "Fundamentos para la Gestión de Peligros y Riesgos",
+                    "Administración II",
+                    "Anatomía Funcional"
+                ],
+                "nivel_3": [
+                    "Estadística I",
+                    "Investigación I",
+                    "Redacción Científica",
+                    "Gestión de Peligros y Riesgos Biomecánicos",
+                    "Gestión de Peligros y Riesgos Físicos",
+                    "Legislación y Seguridad en el Trabajo",
+                    "Salud Pública"
+                ],
+                "nivel_4": [
+                    "Estadística II",
+                    "Formulación y Evaluación de Proyectos",
+                    "Investigación de Accidentes de Trabajo",
+                    "Gestión del Talento Humano",
+                    "Gestión de Peligros y Riesgos Mecánicos y Eléctricos"
+                ],
+                "nivel_5": [
+                    "Gestión de Peligros y Riesgos Biológicos",
+                    "Gestión de Peligros y Riesgos Químicos Tecnológicos",
+                    "Gestión de Peligros y Riesgos Públicos y de Seguridad Vial",
+                    "Bienestar Laboral",
+                    "Medicina Preventiva",
+                    "Bioética"
+                ],
+                "nivel_6": [
+                    "Investigación II",
+                    "Electiva",
+                    "Sistemas de Vigilancia epidomológica",
+                    "Indentificación y Gestión de Amenazas",
+                    "Toxicología Laboral",
+                    "Gestión de Salud en el Trabajo"
+                ],
+                "nivel_7": [
+                    "Investigación III",
+                    "Cultura Ciudadana",
+                    "Analítica",
+                    "Emprendimiento",
+                    "Sistemas Integrados de Gestión"
+                ],
+                "nivel_8": [
+                    "Trabajo de Grado",
+                    "Primeros Auxilios Básicos",
+                    "Planes de Prevención, Preparación y Respuesta ante Emergencias",
+                    "Auditoría en SIstemas de Gestión",
+                    "Saneamiento Básico y Ambiental"
+                ],
+                "nivel_9": [
+                    "Práctica Profesional III - Integral",
+                    "Profundización",
+                    "Ética",
+                    "Desarollo Sostenible"
+                ]
+            }
+        ],
+        "transición": [
+            {
+                "nivel_3T": [
+                    "Matemáticas I / II",
+                    "Competencias Comunicativas / Redacción Científica",
+                    "Hojas Electrónicas (Sistemas)",
+                    "Introducción a la Seguridad y Salud en el Trabajo / Legislación y Seguridad en el Trabajo",
+                    "Administración I / II",
+                    "Legislación Laboral"
+                ],
+                "nivel_4T": [
+                    "Estadística I / II",
+                    "Derecho Constitucional",
+                    "Investigación de Accidentes de Trabajo",
+                    "Fundamentos para la Gestión de Peligros y Riesgos / Gestión de Peligros y Riesgos Biomecánicos / Gestión de Peligros y Riesgos Físicos",
+                    "Salud Pública",
+                    "Anatomía Funcional"
+                ],
+                "nivel_5T": [
+                    "Gestión de Peligros y Riesgos Químicos Tecnológicos",
+                    "Investigación I / II",
+                    "Gestión de Peligros y Riesgos Públicos y de Seguridad Vial",
+                    "Gestión de Peligros y Riesgos Mecánicos y Eléctricos / Gestión de Peligros y Riesgos Físicos",
+                    "Medicina Preventiva"
+                ],
+                "nivel_6T": [
+                    "Primeros Auxilios Básicos",
+                    "Formulación y Evaluación de Proyectos",
+                    "Sistemas de Vigilancia epidomológica",
+                    "Gestión del Talento Humano",
+                    "Bioética"
+                ],
+                "nivel_7T": [
+                    "Cultura Ciudadana",
+                    "Analítica",
+                    "Planes de Prevención, Preparación y Respuesta ante Emergencias",
+                    "Bienestar Laboral",
+                    "Toxicología Laboral / Electiva",
+                    "Bioética"
+                ],
+                "nivel_8T": [
+                    "Investigación III / Emprendimiento",
+                    "Saneamiento Básico y Ambiental / Desarollo Sostenible",
+                    "Auditoría en SIstemas de Gestión / Profundización",
+                    "Indentificación y Gestión de Amenazas",
+                    "Sistemas Integrados de Gestión / Gestión de Salud en el Trabajo"
+                ],
+                "nivel_9T": [
+                    "Trabajo de Grado",
+                    "Práctica Profesional",
+                    "Analítica",
+                    "Emprendimiento",
+                    "Sistemas Integrados de Gestión"
+                ]
+            }
+        ]
+    },
+    "profesional_en_sistemas_de_información_organizacional_único": {
+        "regular": [
+            {
+                "nivel_1": [
+                    "Sistemas",
+                    "Matemáticas I",
+                    "Lectura Crítica",
+                    "Algoritmos y Programación",
+                    "Administración I",
+                    "Legislación Tecnológica"
+                ],
+                "nivel_2": [
+                    "Hojas Electrónicas",
+                    "Matemáticas II",
+                    "Administración II",
+                    "Contabilidad I",
+                    "Lenguajes de Programación I"
+                ],
+                "nivel_3": [
+                    "Redacción Científica",
+                    "Investigación I",
+                    "Redes de Datos I",
+                    "Bases de Datos",
+                    "Administración Financiera",
+                    "lenguajes de Programación II"
+                ],
+                "nivel_4": [
+                    "Administración del Talento Humano",
+                    "Estadística I",
+                    "Redes de Datos II",
+                    "Sistemas Operativos",
+                    "Teoría General de Sistemas",
+                    "Derecho Constitucional"
+                ],
+                "nivel_5": [
+                    "Estadística II",
+                    "Arquitectura de Sistemas Operativos",
+                    "Teoría de la Decisión",
+                    "Auditoría de Sistemas I",
+                    "Fundamentos de Seguridad Informática",
+                    "Gobierno TI"
+                ],
+                "nivel_6": [
+                    "Ética",
+                    "Prospectiva Tecnológica",
+                    "Arquitectura Tecnológica",
+                    "Auditoría de Sistemas II",
+                    "E-Commerce",
+                    "Seguridad en Internet"
+                ],
+                "nivel_7": [
+                    "Emprendimiento",
+                    "Cultura Ciudadana",
+                    "Investigación II",
+                    "Analítica",
+                    "Criptografía",
+                    "Planes de Contingencia Backup y Recuperación"
+                ],
+                "nivel_8": [
+                    "Desarrollo Sostenible",
+                    "Seguridad y Monitoreo",
+                    "Investigación III",
+                    "Gerencia de Proyectos de Tecnología",
+                    "Gestión del Cambio",
+                    "Electiva I"
+                ],
+                "nivel_9": [
+                    "Trabajo de Grado",
+                    "Minería de Datos",
+                    "Gestión de Riesgos Informáticos",
+                    "Electiva II"
+                ]
+            }
+        ],
+        "transición":[
+            {
+                "nivel_3T": [
+                    "Hojas Electrónicas (Sistemas)",
+                    "Matemáticas I / II",
+                    "Lectura Crítica",
+                    "Algoritmos y Programación",
+                    "Administración I / II",
+                    "Legislación Tecnológica"
+                ],
+                "nivel_4T": [
+                    "Administración Financiera",
+                    "Estadística I",
+                    "Bases de Datos",
+                    "Contabilidad I",
+                    "Derecho Constitucional",
+                    "Fundamentos de Seguridad Informática"
+                ],
+                "nivel_5T": [
+                    "Administración del Talento Humano",
+                    "Redacción Científica",
+                    "Estadística II",
+                    "Redes de Datos I / II",
+                    "lenguajes de Programación II",
+                    "Sistemas Operativos / Teoría General de Sistemas"
+                ],
+                "nivel_6T": [
+                    "Desarrollo Sostenible",
+                    "Investigación I / II",
+                    "Analítica",
+                    "Arquitectura Tecnológica / Prospectiva Tecnológica",
+                    "E-Commerce",
+                    "Arquitectura de Sistemas Operativos"
+                ],
+                "nivel_7T": [
+                    "Cultura Ciudadana",
+                    "Gestión del Cambio",
+                    "Electiva I",
+                    "Auditoría de Sistemas I / II",
+                    "Seguridad y Monitoreo",
+                    "Gobierno TI"
+                ],
+                "nivel_8T": [
+                    "Investigación III",
+                    "Minería de Datos",
+                    "Emprendimiento",
+                    "Gerencia de Proyectos de Tecnología",
+                    "Planes de Contingencia Backup y Recuperación"
+                ],
+                "nivel_9T": [
+                    "Trabajo de Grado",
+                    "Criptografía",
+                    "Gestión de Riesgos Informáticos",
+                    "Electiva II"
+                ]
+            }
+        ]
     }
 }
