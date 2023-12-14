@@ -53,7 +53,7 @@ const udecolProgram = [
     "Administración Financiera",
     "Contaduría Pública",
     "Derecho",
-    "Profesional en Sistemas Información Organizacional",
+    "Profesional en Sistemas de Información Organizacional",
     "Seguridad y Salud en el Trabajo"
 ];
 
