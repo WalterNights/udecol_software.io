@@ -339,9 +339,7 @@ const downloadExcel = (data1, data2, filename = "consolidad estudiantes "+ conve
         const book = XLSX.utils.book_new();
         XLSX.utils.book_append_sheet(book, sheet1, 'Lista de Estudiantes');
         XLSX.utils.book_append_sheet(book, sheet2, 'Consolidado Regulares');
-        if(programN !== "Derecho"){
-            XLSX.utils.book_append_sheet(book, sheet3, 'Consolidado Transición');
-        };
+        if(programN !== "Derecho") XLSX.utils.book_append_sheet(book, sheet3, 'Consolidado Transición');
         XLSX.writeFile(book, filename);
         const myTimeout = setTimeout(clearFields, 2000);
     };
