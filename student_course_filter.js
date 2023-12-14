@@ -119,8 +119,6 @@ const processExcel = (data) => {
     if(downloadReady[0].length !== 0 || downloadReady[1].length !== 0){
         ExcelReady.classList.remove("download-disable");
         for(let i of attributes) ExcelReady.setAttribute(i[0], i[1]);
-    }else {
-
     };
 };
 
@@ -226,9 +224,7 @@ const makeCourse = (courseDB) => {
                             if(courseLevelT !== undefined){
                                 const nexLevelUser = Number(userCourse.Nivel.match(/(\d+)/)[0]) + 1;
                                 const nexLevelCourse = courseLevelT.course_level.match(/(\d+)/)[0];
-                                if(nexLevelCourse > nexLevelUser){
-                                    //console.log("el estudiante ", userCourse.Usuario, " aun no puede ver este curso"); 
-                                }else{
+                                if(!(nexLevelCourse > nexLevelUser)){
                                     courseDB.transition[date].push(
                                         userCourse.Usuario + 
                                         " - Documento: " + 
@@ -244,9 +240,7 @@ const makeCourse = (courseDB) => {
                             const nexLevelUser = Number(userCourse.Nivel) + 1;
                             const courseLevelR = getTheCourseLevel(date);
                             if(courseLevelR !== undefined){
-                                if(courseLevelR > nexLevelUser){
-                                    //console.log("el estudiante ", userCourse.Usuario, " aun no puede ver este curso"); 
-                                }else{
+                                if(!(courseLevelR > nexLevelUser)){
                                     //Add the user in the course array
                                     courseDB.regular[date].push(
                                         userCourse.Usuario + 
@@ -339,6 +333,9 @@ const downloadExcel = (data1, data2, filename = "consolidad estudiantes "+ conve
         const sheet1 = XLSX.utils.json_to_sheet(dataSheet1);
         const sheet2 = XLSX.utils.json_to_sheet(dataSheet2);
         const sheet3 = XLSX.utils.json_to_sheet(dataSheet3);
+        sheet1['!autofilter'] = { ref:"A1:BZ1" };
+        sheet2['!autofilter'] = { ref:"A1:BZ1" };
+        sheet3['!autofilter'] = { ref:"A1:BZ1" };
         const book = XLSX.utils.book_new();
         XLSX.utils.book_append_sheet(book, sheet1, 'Lista de Estudiantes');
         XLSX.utils.book_append_sheet(book, sheet2, 'Consolidado Regulares');
@@ -351,8 +348,6 @@ const downloadExcel = (data1, data2, filename = "consolidad estudiantes "+ conve
 };
 
 const clearFields = () => location.reload();
-
-
 
 //Export DOM fucntions
 window.downloadExcel = downloadExcel;
