@@ -8,10 +8,8 @@ var courseUsers;
 var convertPMN;
 var downloadReady;
 const getDataBase = Object.entries(database);
-const findUser = document.getElementById('findUser');
 const fileExcel = document.getElementById('docpicker');
 const ExcelReady = document.getElementById('ExcelReady');
-const cardStudent = document.getElementById('cardStudent');
 const programPlan =  document.getElementById("programPlan");
 const programName =  document.getElementById("programName");
 const getProgramData =  document.getElementById("getProgramData");
@@ -84,12 +82,13 @@ function studentUser(Usuario, Documento, Tipo_Nivel, Nivel, Jornada, Periodo, Cu
 };
 
 //Make an object USERS IN CORUSE according to fields and values obtained of the EXCEL 
-function courseUser(Curso, Nivel, Diurnos ,Nocturnos ,Sabatinos, Estudiantes, estudiante) {
+function courseUser(Curso, Nivel, Diurnos ,Nocturnos ,Sabatinos, Distancia, Estudiantes, estudiante) {
     this.Curso = Curso;
     this.Nivel = Nivel;
     this.Diurnos = Diurnos;
     this.Nocturnos = Nocturnos;
     this.Sabatinos = Sabatinos;
+    this.Distancia = Distancia;
     this.Estudiantes = Estudiantes;
     for (let i in estudiante) {
         this["Estudiante_" + i] = estudiante[i]
@@ -147,17 +146,20 @@ const toJson = (workbook) => {
                 const journeyD = [];
                 const journeyN = [];
                 const journeyS = [];
+                const journeyDist = [];
                 userJourney.forEach(item => {
                     if(item.match("Mañana")) journeyD.push(item);
                     if(item.match("Nocturna")) journeyN.push(item);
                     if(item.match("Sabatina")) journeyS.push(item);
+                    if(item.match("A Distancia")) journeyDist.push(item);
                 })
                 const courseUsers = new courseUser(
                     full, 
                     finalLevel, 
                     journeyD.length, 
                     journeyN.length, 
-                    journeyS.length, 
+                    journeyS.length,
+                    journeyDist.length, 
                     getTheCoruse[key][full].length, 
                     getTheCoruse[key][full]
                 );
