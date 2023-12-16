@@ -265,17 +265,9 @@ const makeCourse = (courseDB) => {
 };
 
 //Triggered the course level checker
-const getTheCourseLevel = (value, level) => {
-    let getPlan;
-    if(programPlan.value.endsWith("Actual")){
-        getPlan = "2016"
-    }else if(programPlan.value.endsWith("2019")){
-        getPlan = "2019"
-    }else if(programPlan.value.endsWith("2021")){
-        getPlan = "2021"
-    }else if(programPlan.value.endsWith("Único")){
-        getPlan = "único"
-    };
+const getTheCourseLevel = (val, level) => {
+    let getPlan = programPlan.value;
+    console.log(getPlan)
     for(const [key_1, val_0] of Object.entries(getDataBase)) {
         convertPMN = programN.toLocaleLowerCase().replace(/\s/g, '_') + "_" + getPlan;
         if(convertPMN.match(val_0[0])){
@@ -289,12 +281,12 @@ const getTheCourseLevel = (value, level) => {
                                     if(val_4.match("T")){
                                         const uLevel = level.match(/(\d+)/);
                                         for(const val_5 of val_3[val_4]){
-                                            if(val_5.toUpperCase().match((value))){
+                                            if(val_5.toUpperCase().match((val))){
                                                 if((((Number(uLevel[0])) + 1)) >= Number(cLevel[0])){
                                                     const UCl = {
                                                         course_level: val_4, 
                                                         user_level: level, 
-                                                        course: value
+                                                        course: val
                                                     };
                                                     return UCl;
                                                 };
@@ -304,7 +296,7 @@ const getTheCourseLevel = (value, level) => {
                                 }else{
                                     if(!val_4.match("T")){
                                         for(const val_5 of val_3[val_4]){
-                                            if(val_5.toUpperCase().match((value))){
+                                            if(val_5.toUpperCase().match((val))){
                                                 return Number(cLevel[0]);
                                             };
                                         };
