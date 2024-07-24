@@ -1,5 +1,5 @@
 //Import DataBase JSON
-import database from './dataBase.json' assert { type: "json"};
+import database from './dataBase.json' with { type: "json"};
 
 //Global Variables
 var programN;
